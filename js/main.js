@@ -42,6 +42,7 @@ elFormFind.addEventListener("submit" , function(evt){
         elAlertFind.classList.remove("bg-green-600");
         elAlertFind.classList.add("bg-red-500");
         elResBtn.classList.add("btn-js-res-show")
+        elTextFind.textContent = "O'yin tugadi siz yutqazdingiz 😐";
         elResBtn.addEventListener("click", function(){
             window.location.reload()
         })
