@@ -37,12 +37,12 @@ elFormFind.addEventListener("submit" , function(evt){
     
     if(randomAttemp == 0){
         elInputFind.disabled = true;
-        elBtnFind.setAttribute("disabled", true)
+        elBtnFind.setAttribute("disabled", true);
+        elBtnFind.textContent = "O'yin tugadi siz yutqazdingiz 😐"
         elAlertFind.textContent = "Urinishlar soni tugadi !!! 🙄";
         elAlertFind.classList.remove("bg-green-600");
         elAlertFind.classList.add("bg-red-500");
-        elResBtn.classList.add("btn-js-res-show")
-        elTextFind.textContent = "O'yin tugadi siz yutqazdingiz 😐";
+        elResBtn.classList.add("btn-js-res-show");
         elInputFind.value = "";
         elTextFind.textContent = `Siz topa olmagan son ${randomNumber} edi 😜`;
         elResBtn.addEventListener("click", function(){
