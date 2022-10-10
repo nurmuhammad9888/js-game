@@ -20,7 +20,7 @@ elFormFind.addEventListener("submit" , function(evt){
     
     if(elInputFindValue > randomNumber){
         elTextFind.textContent = "Kirtilgan son ehtiyoriy sondan katta ";
-        elTextFind.classList.remove("bg-green-500");
+        elTextFind.classList.remove("bg-rose-800");
         elTextFind.classList.add("bg-amber-600");
         
     } else if(elInputFindValue < randomNumber){
@@ -43,6 +43,8 @@ elFormFind.addEventListener("submit" , function(evt){
         elAlertFind.classList.add("bg-red-500");
         elResBtn.classList.add("btn-js-res-show")
         elTextFind.textContent = "O'yin tugadi siz yutqazdingiz 😐";
+        elInputFind.value = "";
+        elTextFind.textContent = `Siz topa olmagan son ${randomNumber} edi 😜`;
         elResBtn.addEventListener("click", function(){
             window.location.reload()
         })
